@@ -1,0 +1,16 @@
+{
+	"name": "ask-user-pi-extension",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Pi extension that registers the ask_user tool for human-in-the-loop input.",
+	"type": "module",
+	"scripts": {
+		"test": "node --experimental-strip-types --test",
+		"test:watch": "node --experimental-strip-types --test --watch"
+	},
+	"pi": {
+		"extensions": [
+			"./src/index.ts"
+		]
+	}
+}
